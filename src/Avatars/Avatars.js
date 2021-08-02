@@ -7,8 +7,9 @@ const Avatars = () => {
   const [avatars, setAvatars] = useState([]);
 
   useEffect(() => {
+    console.log(process.env.REACT_APP_API_KEY);
     axios
-      .get("https://rickandmortyapi.com/api/character/") // fetch only 20 characters not all of them.
+      .get(process.env.REACT_APP_API_KEY) // fetch only 20 characters not all of them.
       .then((res) => {
         console.log(res);
         setAvatars(res.data.results);
@@ -20,11 +21,9 @@ const Avatars = () => {
 
   return (
     <div>
-      <ul>
-        {avatars.map((avatar) => (
-          <Avatar key={avatar.id} avatar={avatar} />
-        ))}
-      </ul>
+      {avatars.map((avatar) => (
+        <Avatar key={avatar.id} avatar={avatar} />
+      ))}
     </div>
   );
 };

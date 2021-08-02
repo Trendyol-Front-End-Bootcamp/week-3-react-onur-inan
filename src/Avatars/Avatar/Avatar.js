@@ -1,13 +1,14 @@
 import React from "react";
+import "./avatar.css";
 
 const Avatar = ({ avatar }) => {
   const { name, gender, type, status, image, location } = avatar;
 
   return (
-    <div>
-      <img src={image} alt="avatar" />
+    <section>
+      <img src={image} alt="avatar" className="image" />
       <h4>{`${name} ${gender} ${type} ${status} ${location.name}`}</h4>
-    </div>
+    </section>
   );
 };
 
