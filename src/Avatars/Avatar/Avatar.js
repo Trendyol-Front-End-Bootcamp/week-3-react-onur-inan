@@ -6,7 +6,7 @@ const Avatar = ({ avatar }) => {
   return (
     <div>
       <img src={image} alt="avatar" />
-      <h1>{`${name} ${gender} ${type} ${status} ${location.name}`}</h1>
+      <h4>{`${name} ${gender} ${type} ${status} ${location.name}`}</h4>
     </div>
   );
 };
