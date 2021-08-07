@@ -1,0 +1,5 @@
+.wrapper {
+  background: rgb(36, 40, 47);
+  display: flex;
+  flex-wrap: wrap;
+}
