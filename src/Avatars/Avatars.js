@@ -2,6 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import Avatar from "./Avatar/Avatar";
+import "./avatars.css";
 
 const Avatars = () => {
   const [avatars, setAvatars] = useState([]);
@@ -20,11 +21,11 @@ const Avatars = () => {
   }, []);
 
   return (
-    <div>
+    <main className="wrapper">
       {avatars.map((avatar) => (
         <Avatar key={avatar.id} avatar={avatar} />
       ))}
-    </div>
+    </main>
   );
 };
 
