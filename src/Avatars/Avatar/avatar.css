@@ -3,9 +3,21 @@ h4 {
   margin: 0;
 }
 
+h4 {
+  color: rgb(245, 245, 245);
+}
+
 a {
   text-decoration: none;
   color: aliceblue;
+}
+
+a:hover {
+  color: rgb(255, 152, 0);
+}
+
+.grayText {
+  color: rgb(158, 158, 158);
 }
 
 .cardWrapper {
@@ -29,4 +41,8 @@ a {
 img {
   flex: 0 2 0%;
   width: 100%;
+}
+
+.status {
+  color: rgb(245, 245, 245);
 }

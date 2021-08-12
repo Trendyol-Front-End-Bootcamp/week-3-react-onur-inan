@@ -18,12 +18,12 @@ const Avatar = ({ avatar }) => {
           <span className="status">{`${type} -- ${status}`}</span>
         </section>
         <section>
-          <span className="grayText">Last Known Location</span>
+          <span className="grayText">Last Known Location:</span>
           <h4>{location.name}</h4>
         </section>
         <section>
           <span className="grayText">Gender:</span>
-          <h4>{`${gender}`}</h4>
+          <h4>{gender}</h4>
         </section>
       </div>
     </article>
