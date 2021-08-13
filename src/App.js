@@ -1,11 +1,22 @@
 import "./App.css";
 import Avatars from "./Avatars/Avatars";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import CharacterDetail from "./CharacterDetail/CharacterDetail";
 
-function App({ avatars, setAvatars }) {
+function App() {
   return (
-    <div className="App">
-      <Avatars />
-    </div>
+    <Router>
+      <div className="App">
+        <Switch>
+          <Route exact path="/">
+            <Avatars />
+          </Route>
+          <Route path="/character">
+            <CharacterDetail />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
