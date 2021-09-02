@@ -11,7 +11,7 @@ function App() {
           <Route exact path="/">
             <Avatars />
           </Route>
-          <Route path="/character">
+          <Route exact path="/character/:id">
             <CharacterDetail />
           </Route>
         </Switch>

@@ -28,6 +28,7 @@ a:hover {
   background: rgb(60, 62, 68);
   border-radius: 0.5rem;
   margin: 0.75rem;
+  cursor: pointer;
 }
 
 .cardContent-Wrapper {
